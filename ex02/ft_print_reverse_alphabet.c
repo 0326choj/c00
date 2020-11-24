@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ejung <ejung@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/23 15:36:36 by ejung             #+#    #+#             */
-/*   Updated: 2020/11/23 16:45:59 by ejung            ###   ########.fr       */
+/*   Created: 2020/11/23 18:55:06 by ejung             #+#    #+#             */
+/*   Updated: 2020/11/23 19:41:51 by ejung            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	ft_print_reverse_alphabet(void)
 {
-	write(1, &c, 1);
+	int i;
+
+	i = 122;
+	while (i >= 97)
+	{
+		write(1, &i, 1);
+		i--;
+	}
 }
